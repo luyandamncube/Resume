@@ -1,5 +1,9 @@
 # Resume
 My Resume
 
-Created using [https://github.com/deedy/Deedy-Resume](Deedy-Resume)
+Created using [Deedy-resume](https://github.com/deedy/Deedy-Resume)
+
+<p align="center">
+  <img src="sample.png"/>
+</p>
 
