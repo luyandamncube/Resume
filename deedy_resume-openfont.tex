@@ -1,0 +1,258 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Luyanda}{Mncube}{ \urlstyle{same}\href{https://luyandamncube.github.io/}{luyandamncube.github.io}| \href{github.com/luyandamncube}\\
+\href{mailto:luyanda.mncube@britehouse.co.za}{luyanda.mncube@britehouse.co.za} | 061 116 7195 
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{UNISA}
+\descript{Bsc CompSci \& Mathematics}
+\location{Ongoing | South Africa, JHB}
+\sectionsep
+
+\subsection{Wethinkcode}
+\descript{Software Engineering}
+\location{2019 | Johannesburg CBD, JHB}
+\sectionsep
+
+\subsection{Northcliff High School}
+\location{2011|  Northcliff, JHB}
+\location{4 Distinctions, 9 subjects}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+% Facebook:// \href{https://facebook/dd}{\bf dd} \\
+\href{https://github.com/luyandamncube }{\bf https://github.com/luyandamncube } \\
+\href{https://www.linkedin.com/in/luyandamncube}{\bf https://linkedin.com/in/luyandamncube} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Undergraduate}
+Programming (C++/Qt) \\
+Theoretical Machines \\
+Formal Logic \\
+Algebra \\
+Linear Calculus \\
+\sectionsep
+
+\subsection{Wethinkcode}
+Unix Tools and Scripting \\
+C, POSIX \\
+Algorithms \& Game AI\\
+Signals \& IO\\
+Functional Programming \\
+Predictive Analysis \\
+Regression Modelling \\
+% {\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst 2x) }}} \\s
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     CERTIFICATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Certification}
+% \subsection{Undergraduate}
+MCSA: Database Development \\
+Certified SAFe \textregistered Agilist \\
+Certified Foundation TEFL
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Programming}
+% \subsection{Programming}
+\location{Languages:}
+C \textbullet{} C++ \textbullet{} C\# \textbullet{}  TSQL \\
+
+\location{Scripting:}
+ Shell \textbullet{} Python \textbullet{} Javascript \\
+
+\location{Databases:}
+MySQL \textbullet{} Microsoft SQL Server \textbullet{} CosmosDB \\
+
+\location{Technologies:}
+Ansible \textbullet{} Selenium \textbullet{} Webdriver \textbullet{} NiFi \textbullet{} Docker \\
+
+\location{Tools:}
+Jira \textbullet{} Git \textbullet{} Putty \textbullet{} Cygwin \textbullet{} \LaTeX\
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PERSONAL SUMMARY
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Personal Summary}
+
+Inquisitive, hard-working and creative at heart. People come first in my life and I am not afraid of a challenge or shouldering responsibility. I love to learn and find myself sharing everything I learn about technology with the people around me. 
+\sectionsep
+
+I currently work as a Data Engineer at Britehouse and have previously worked as an intern in their Graduate Program for 2019. At the moment, I am currently interested in data and automation, having spent a lot of my personal time doing projects in data preparation, regression models, RPA and infrastructure provisioning.
+\sectionsep
+
+I studied Software engineering at Wethinkcode (a school based on  42: tuition-free computer programming school created and funded by French billionaire Xavier Niel and partners) and I am currently studying Computer Science \& Mathematics part-time. All my work and project can be viewed on my personal github.  
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Dimension Data IW}
+\descript{| Data Engineer }
+\location{Feb. 2020 - Present | Bryanston, JHB}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Race Center Team. The team is
+responsible for delivering Analytics, Database Development, Monitoring and Support to NTT, the official technology partner of The Tour De France.
+\item Developed maintainable, efficient features in SQL, Apache NiFi, and
+Python. 
+\item Provided live race-day support for data streams.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Britehouse}
+\descript{| Software Development Intern }
+\location{Feb 2019 – Jan 2020 | Bryanston, JHB}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Full-year intensive program aimed at grooming industry-leading talent. 
+\item Tasked to develop the “2020 Graduate Program” as part our program mandate, shaping the future of the program and it's goals whilst focusing on learning \& development through project-based work.
+\item Worked as part of TeamGrind agile team to deliver the automated on-boarding solution for HR.
+\item Worked as part of 4IOTAnalytics agile team to deliver POC for client and an admin portal which allows clients to view their insights based on their data integration points.
+\end{tightemize}
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects} 
+\begin{tabular}{rll}
+Hitchhikers guide to C	     & A crash course PDF for C \& Algorithms\\
+DSLR    & Machine Learning by implementing a linear classification model\\
+libft & An open-source C library of standard functions
+
+
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills} 
+\begin{tabular}{rll}
+Data & Experience with ETL, data wrangling, data streaming \\
+Scripting  & Solid knowledge/experience with scripting technologies\\
+Automation & Experience with UiPath, webdriver (Selenium) \\
+Code Quality	  & healthy habits: coding conventions, documentation and testing\\
+Config Management	  & I have been exposed saltstack, ansible\\
+
+\end{tabular}
+\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
